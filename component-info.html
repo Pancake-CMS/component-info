@@ -1,0 +1,48 @@
+<link rel="import" href="../github-readme/github-readme.html">
+
+<dom-module id="component-info">
+  <style>
+    :host {
+      width: 100%;
+      max-height: 500px;
+    }
+  </style>
+  <template>
+    <github-readme auto user$="[[user]]" repo$="[[repo]]"></github-readme>
+  </template>
+  <script>
+    Polymer({
+      is: 'component-info',
+      
+      properties: {
+        /**
+         * The GitHub username for the repo.
+         *
+         * @attribute user
+         * @type string
+         */
+        user: {
+          type: String,
+          reflectToAttribute: true,
+          notify: true
+        },
+        
+        /**
+         * The GitHub repository name to get the readme from.
+         *
+         * @attribute repo
+         * @type string
+         */
+        repo: {
+          type: String,
+          reflectToAttribute: true,
+          notify: true
+        }
+      },
+      
+      ready: function() {
+        console.log(' i am ready');
+      }
+    });
+  </script>
+</dom-module>

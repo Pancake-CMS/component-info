@@ -1,0 +1,23 @@
+{
+  "name": "component-info",
+  "homepage": "https://github.com/Pancake-CMS/component-info",
+  "version": "0.1",
+  "authors": [
+    "Prateek Jadhwani <prateekjadhwani@users.noreply.github.com>"
+  ],
+  "description": "A Polymer element that displays the information from README file of a component",
+  "main": "component-info.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "github-readme": "git+ssh://git@github.com/Pancake-CMS/github-readme.git",
+    "polymer": "Polymer#^1.6.0"
+  }
+}
