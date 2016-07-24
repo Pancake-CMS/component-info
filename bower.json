@@ -8,7 +8,7 @@
   "description": "A Polymer element that displays the information from README file of a component",
   "main": "component-info.html",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
