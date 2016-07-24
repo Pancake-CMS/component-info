@@ -18,6 +18,6 @@
   ],
   "dependencies": {
     "polymer": "Polymer#^1.6.0",
-    "github-readme": "git://github.com/Pancake-CMS/github-readme.git"
+    "github-readme": "Pancake-github-readme#*"
   }
 }
