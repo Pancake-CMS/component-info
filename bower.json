@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "github-readme": "git+ssh://git@github.com/Pancake-CMS/github-readme.git",
-    "polymer": "Polymer#^1.6.0"
+    "polymer": "Polymer#^1.6.0",
+    "github-readme": "git://github.com/Pancake-CMS/github-readme.git"
   }
 }
