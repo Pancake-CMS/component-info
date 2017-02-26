@@ -1,8 +1,14 @@
 # component-info
 A Polymer web component that displays the information about a component.
 
-## Note
+## Installation
 
-It seems bower is still trying to download the old version of `git-readme`.
+```shell
+bower install --save Pancake-component-info
+```
 
-**TODO** Wait for a couple of days for Ben to update the element.
+## Attributes
+
+| name | type | description |
+|------|------|---------------|
+| homepage | String | The github page of the repo |

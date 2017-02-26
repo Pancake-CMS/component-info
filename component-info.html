@@ -26,7 +26,7 @@
          */
         user: {
           type: String,
-          reflectToAttribute: true,
+          reflectToAttribute: false,
           notify: true
         },
 
@@ -38,13 +38,26 @@
          */
         repo: {
           type: String,
+          reflectToAttribute: false,
+          notify: true
+        },
+
+        homepage: {
+          type: String,
           reflectToAttribute: true,
           notify: true
         }
       },
 
-      ready: function() {
-        console.log(' i am ready');
+      observers: [
+        '_handleHomepageChange(homepage)'
+      ],
+
+      _handleHomepageChange: function() {
+        var url = this.homepage.split('https://github.com/')[1];
+        url = url.split('/');
+        this.user = url[0];
+        this.repo = url[1];
       }
     });
   </script>
